@@ -169,8 +169,15 @@ class QuizController extends Controller
             return redirect('profile');   
         }
         if ($request->input("add_qu") != "") {
-            $qu = $request->input('qu');
-            question::where('id', $request->input("add_qu"))->update(['question' => $qu]);    
+            if ($request->input('qu') != ''){
+                $qu = $request->input('qu');
+                question::where('id', $request->input("add_qu"))->update(['question' => $qu]);    
+            }
+            if ($request->input('pos') != ''){
+                $po = $request->input('pos');
+                question::where('id', $request->input("add_qu"))->update(['position' => $po]);
+            }
+            
             return redirect('profile');     
         }
 

@@ -10,6 +10,9 @@
                         @csrf
                         <input type="text" class="form-control" aria-label="Sizing example input" name="qu" aria-describedby="inputGroup-sizing-default">
                         <br>
+                        {{$info['position']}}
+                        <input type="text" class="form-control" aria-label="Sizing example input" name="pos" aria-describedby="inputGroup-sizing-default">
+                        <br>
                         <button type="submit" name="add_qu" value="{{$info['id']}}" class="btn btn-primary">change</button>
                         <br>
                         <button type="submit" name="delete_qu" value="{{$info['id']}}" class="btn btn-danger">delete</button>
