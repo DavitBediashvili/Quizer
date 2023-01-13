@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section("body")
-
+<center>
         <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -43,5 +43,5 @@
 
                 
         </form>
-
+        </center>
 @endsection

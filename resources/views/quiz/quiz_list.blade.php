@@ -3,6 +3,7 @@
 @section("body")
 
     @guest
+    <center>
         <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
         <a href="{{ route('register') }}" class="btn btn-secondary">Register</a>
         @foreach($infos as $info)
@@ -27,11 +28,13 @@
             </div>
 
         @endforeach
-
+        </center>
     @endguest
+    
 
 
     @auth
+    <center>
         <a href="{{ route('create') }}" class="btn btn-primary">create</a>
         <a href="{{ route('profile') }}" class="btn btn-primary">profile</a>
         <a href="{{ route('admin') }}" class="btn btn-primary">admin</a>
@@ -58,7 +61,7 @@
             </div>
 
         @endforeach
-
+        </center>
     @endauth
 
 

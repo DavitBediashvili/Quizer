@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
 <a href="{{ route('list') }}" class="btn btn-primary">Main Page</a>
     @foreach($infos as $info)
         <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
@@ -65,4 +66,5 @@
 
         <button type="submit" name="add_answer" value="a" class="btn btn-primary">next question</button>
     </form>
+    </center>
 @endsection

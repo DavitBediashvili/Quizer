@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
     @foreach($infos as $info)
 
         <div class="card">
@@ -41,5 +42,5 @@
         <br>
         <button type="submit" name="add_qu_new" value="{{$infos[0]['quiz_id']}}" class="btn btn-primary">add</button>
     </form>
-
+    </center>
 @endsection

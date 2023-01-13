@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
         <form method="post" action="">
                 @csrf
                 <div class="input-group mb-3">
@@ -36,5 +37,5 @@
                 <button type="submit" name="add_answer" value="{{$named}}" class="btn btn-primary">next question</button>
                 <button type="submit" name="end_answer" value="{{$named}}" class="btn btn-primary">end</button>
         </form>
-
+        </center>
 @endsection

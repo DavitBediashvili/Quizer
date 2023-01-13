@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
     <a href="{{ route('logout') }}" class="btn btn-danger">logout</a>
     <a href="{{ route('list') }}" class="btn btn-primary">Main Page</a>
     
@@ -27,4 +28,5 @@
         </div>
 
     @endforeach
+    </center>
 @endsection

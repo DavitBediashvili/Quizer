@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
 <a href="{{ route('list') }}" class="btn btn-primary">Main Page</a>
 <br>
 <form  method="post">
@@ -32,4 +33,5 @@
     </div>
 
 @endforeach
+</center>
 @endsection

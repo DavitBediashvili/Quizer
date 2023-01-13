@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section("body")
-
+<center>
     @foreach($infos as $info)
 
         <div class="card">
@@ -28,5 +28,5 @@
         <br></br>
 
     @endforeach
-
+    </center>
 @endsection

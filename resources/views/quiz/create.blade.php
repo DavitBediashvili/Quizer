@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section("body")
-
+<center>
     <form method="post" action="">
             @csrf
             <div class="input-group mb-3">
@@ -21,5 +21,5 @@
 
             <button type="submit" name="add" value="v" class="btn btn-primary">Submit</button>
      </form>
-
+     </center>
 @endsection

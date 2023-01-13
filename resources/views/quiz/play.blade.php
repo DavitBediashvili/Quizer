@@ -1,6 +1,7 @@
 @extends("layout")
 
 @section("body")
+<center>
 <div id='main'>
         <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
             <div class="row g-0">
@@ -19,6 +20,7 @@
             </div>
         </div>
 </div>
+</center>
 
 
     <script>
