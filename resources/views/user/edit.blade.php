@@ -2,7 +2,7 @@
 
 @section("body")
 
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="{{$infos[0]['url']}}" class="img-fluid rounded-start" alt="no img">

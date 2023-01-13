@@ -3,7 +3,7 @@
 @section("body")
 <a href="{{ route('list') }}" class="btn btn-primary">Main Page</a>
     @foreach($infos as $info)
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-8">
                     <div class="card-body">

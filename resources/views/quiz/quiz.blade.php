@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section("body")
-        <div  id="demo" class="card mb-3" style="max-width: 1000px;">
+        <div  id="demo" class="card text-light bg-dark mb-3" style="max-width: 1000px;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="{{$infos[0]['url']}}" class="img-fluid" alt="no img">

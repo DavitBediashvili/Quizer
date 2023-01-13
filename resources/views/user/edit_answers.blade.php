@@ -5,7 +5,7 @@
     @foreach($infos as $info)
 
         <div class="card">
-            <div class="card-body">
+            <div class="card text-light bg-dark mb-3">
                     answer: {{$info['answer']}} 
                     <br>
                     type: {{$info['type']}}

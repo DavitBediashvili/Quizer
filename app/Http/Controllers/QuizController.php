@@ -177,6 +177,10 @@ class QuizController extends Controller
                 $po = $request->input('pos');
                 question::where('id', $request->input("add_qu"))->update(['position' => $po]);
             }
+            if ($request->input('url') != ''){
+                $url = $request->input('url');
+                question::where('id', $request->input("add_qu"))->update(['url' => $url]);
+            }
             
             return redirect('profile');     
         }

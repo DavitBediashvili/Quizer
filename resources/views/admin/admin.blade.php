@@ -8,7 +8,7 @@
     <button class="btn btn-primary" name="questions" value='a'>questions</button>
 </form>   
 @foreach($infos as $info)
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card text-light bg-dark mb-3" style="max-width: 540px;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="{{$info['url']}}" class="img-fluid rounded-start" alt="no img">

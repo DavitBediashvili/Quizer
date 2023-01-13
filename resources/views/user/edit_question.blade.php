@@ -4,14 +4,17 @@
     @foreach($infos as $info)
 
         <div class="card">
-            <div class="card-body">
+            <div class="card text-light bg-dark mb-3">
                     {{$info['question']}}
                     <form method="post">
                         @csrf
                         <input type="text" class="form-control" aria-label="Sizing example input" name="qu" aria-describedby="inputGroup-sizing-default">
                         <br>
-                        {{$info['position']}}
+                        position: {{$info['position']}}
                         <input type="text" class="form-control" aria-label="Sizing example input" name="pos" aria-describedby="inputGroup-sizing-default">
+                        <br>
+                        {{$info['url']}}
+                        <input type="text" class="form-control" aria-label="Sizing example input" name="url" aria-describedby="inputGroup-sizing-default">
                         <br>
                         <button type="submit" name="add_qu" value="{{$info['id']}}" class="btn btn-primary">change</button>
                         <br>
